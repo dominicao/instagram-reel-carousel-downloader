@@ -132,3 +132,12 @@ yt-dlp-plugins
 
 # Packages
 yt_dlp_ejs/
+
+# Local Instagram pipeline runtime; never commit sessions or reference media
+/instagram_pipeline/reference-library/
+/.venv-instagram/
+*.cookies.txt
+cookies.txt
+*.session
+/instagram_pipeline/private/
+/instagram_pipeline/*.log

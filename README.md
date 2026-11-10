@@ -1,3 +1,23 @@
+# Instagram Reel & Carousel Downloader
+
+A fork of **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** with a local, single-post Instagram acquisition pipeline in [`instagram_pipeline/`](instagram_pipeline/README.md).
+
+- **Reels:** download the video and available audio using yt-dlp.
+- **Photos and carousels:** use gallery-dl to collect image/video slides in source order.
+- **Optional local Chrome login:** explicitly enabled, Instagram cookies held in memory; no cookie export or password storage.
+- **Validation:** decode files, check slide counts/order, calculate SHA-256 hashes and produce a JSON handoff manifest.
+- **Controlled failures:** stop on access restrictions, challenges and rate limits; reject incomplete downloads.
+
+**Status, 10 November 2026:** a live Chrome-authenticated Reel download succeeded (28.5 seconds, 720×1280, H.264/AAC, full decode passed). Sixteen local regression tests pass. **Live carousel downloading remains unverified.** Instagram access is not guaranteed, and local Keychain approval may be required.
+
+**[Setup, commands and pipeline documentation →](instagram_pipeline/README.md)**
+
+This repository preserves the upstream yt-dlp code and history. Our additions are the Instagram wrapper, tests and documentation; the yt-dlp extractor itself has not been changed. The wrapper uses pinned released dependencies, independently of the upstream snapshot in this fork. No competitor media, personal project files, session data or credentials are included.
+
+---
+
+## Upstream yt-dlp documentation
+
 <!-- MANPAGE: BEGIN EXCLUDED SECTION -->
 <div align="center">
 

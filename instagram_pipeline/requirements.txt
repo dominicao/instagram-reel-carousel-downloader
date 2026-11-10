@@ -1,0 +1,8 @@
+certifi==2026.10.23
+charset-normalizer==3.5.2
+gallery_dl==1.32.19
+idna==3.20
+pillow==13.0.0
+requests==2.34.2
+urllib3==2.8.0
+yt-dlp==2026.10.26
